@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>How To Make A Website With Blur Mask Image Using HTML CSS JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="blur-area">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="text-box">
+                <h1>How To Make A Website</h1>
+                <button type="button">Explore More</button>
+            </div>
+        </div> 
+        <script>
+            var blurArea = document.getElementById("blur-area");
+            document.onmousemove=function(e){
+                blurArea.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+            }
+        </script>
+    </body>
+</html>
